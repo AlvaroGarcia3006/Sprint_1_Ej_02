@@ -4,10 +4,11 @@ public class Coche {
 	
 	private static final String MARCA = "Nissan";
 	private static String modelo;
-	private final int POTENCIA = 98;
+	private final int POTENCIA;
 	
-	public Coche(String modelo) {
+	public Coche(String modelo, int POTENCIA) {
 		Coche.modelo = modelo;
+		this.POTENCIA = POTENCIA;
 	}
 	
 	public static String getModelo() {
@@ -22,7 +23,7 @@ public class Coche {
 		return MARCA;
 	}
 
-	public int getPOTENCIA() {
+	public int getPotencia() {
 		return POTENCIA;
 	}
 
